@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "exo2";
+    src: url(Exo2-VariableFont_wght.ttf);
+}
+
+body{
+    background:gray;
+    overflow-x: hidden;
+
+}
+h1{ 
+    font-size: 140px;
+    font-family:"exo2";
+    opacity: 0.6;
+    color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%,98%);
+    text-align: center;
+
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block; 
+    padding: 5px 40px;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    position:absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: white;
+    opacity:0.8;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; 
+}
+
